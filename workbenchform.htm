@@ -1,4 +1,8 @@
-<div class="cognito">
-<script src="https://www.cognitoforms.com/s/cpGYWzIX6U-AQgLBEb4UhQ"></script>
-<script>Cognito.load("forms", { id: "1" });</script>
-</div>
+<form action="/submit" method="post" id="workbench">
+    <label for="SOQL">Enter SOQL</label>
+    <!--<input id="SOQL" type="text" name="SOQL" value="">-->
+    
+    <input type="submit" value="Run Query">
+</form>
+<textarea rows="4" cols="50" name="SOQL" id="SOQL" form="workbench">
+Enter SOQL here...</textarea>
